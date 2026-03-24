@@ -1,0 +1,30 @@
+names:
+- Agriotes fuscicollis Miwa
+- Anomala corpulenta
+- Armyworm
+- Athetis lepigone
+- Bollworm
+- Gryllotalpa orientalis
+- Land tiger
+- Little Gecko
+- Meadow borer
+- Melahotus
+- Nematode trench
+- Plutella xylostella
+- Rice Leaf Roller
+- Rice planthopper
+- Scotogramma trifolii Rottemberg
+- Spodoptera cabbage
+- Spodoptera exigua
+- Spodoptera litura
+- Stem borer
+- Striped rice bore
+- Yellow tiger
+- eight-character tiger
+- holotrichia oblita
+- holotrichia parallela
+nc: 24
+path: /home/hailey/insect_detect_project/pest24_experiment/data/processed
+test: test/images
+train: train/images
+val: val/images

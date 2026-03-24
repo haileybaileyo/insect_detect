@@ -1,0 +1,28 @@
+cat > .gitignore << 'EOF'
+# 데이터셋 (용량 너무 큼)
+pest24_raw/
+pest24_experiment/data/processed/
+pest24_experiment/data/annotations/
+
+# 학습 체크포인트
+pest24_experiment/checkpoints/
+
+# 가상환경
+pest24_env/
+
+# 로그
+pest24_experiment/logs/
+*.log
+
+# 캐시
+__pycache__/
+*.pyc
+*.cache
+.cache/
+*labels.cache
+
+# 결과 이미지
+pest24_experiment/results/visuals/
+pest24_experiment/results/predictions/
+
+EOF
