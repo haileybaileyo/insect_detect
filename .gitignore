@@ -25,4 +25,5 @@ __pycache__/
 pest24_experiment/results/visuals/
 pest24_experiment/results/predictions/
 
-EOF
+EOF*.pt
+*.pth
