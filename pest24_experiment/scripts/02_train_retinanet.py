@@ -166,4 +166,87 @@ def train():
     num_anchors = model.head.classification_head.num_anchors
     model.head.classification_head.num_classes = train_ds.num_classes
     model.head.classification_head.cls_logits = nn.Conv2d(
-        in_chan
+        in_channels, num_anchors * train_ds.num_classes,
+        kernel_size=3, stride=1, padding=1
+    )
+    model.to(device)
+
+    # 공식 권장: SGD + StepLR
+    optimizer = torch.optim.SGD(model.parameters(), lr=LR,
+                                momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
+
+
+    best_loss = float('inf')
+    patience_counter = 0
+    history = []
+
+    print("=" * 60)
+    print(f" RetinaNet 학습 시작 | imgsz={IMGSZ} | epochs={EPOCHS}")
+    print("=" * 60)
+
+    for epoch in range(1, EPOCHS + 1):
+        model.train()
+        epoch_loss = 0.0
+        t0 = time.time()
+
+        for images, targets in tqdm(train_loader, desc=f"  Epoch {epoch}/{EPOCHS}", leave=False):
+            images  = [img.to(device) for img in images]
+            targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+
+            loss_dict = model(images, targets)
+            loss = sum(loss_dict.values())
+
+            optimizer.zero_grad()
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)
+            optimizer.step()
+            epoch_loss += loss.item()
+
+        scheduler.step()
+        avg_loss = epoch_loss / len(train_loader)
+        elapsed  = time.time() - t0
+
+        # Val loss
+        model.train()
+        val_loss = 0.0
+        with torch.no_grad():
+            for images, targets in val_loader:
+                images  = [img.to(device) for img in images]
+                targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+                loss_dict = model(images, targets)
+                val_loss += sum(loss_dict.values()).item()
+        val_loss /= len(val_loader)
+
+        print(f"  Epoch {epoch:3d} | Train Loss={avg_loss:.4f} | Val Loss={val_loss:.4f} | "
+              f"LR={scheduler.get_last_lr()[0]:.6f} | {elapsed:.1f}s")
+
+        history.append({"epoch": epoch, "train_loss": avg_loss, "val_loss": val_loss})
+
+        # Best 저장
+        if val_loss < best_loss:
+            best_loss = val_loss
+            patience_counter = 0
+            ckpt_path = CKPT_DIR / f"{run_name}_best.pth"
+            torch.save({
+                "epoch": epoch, "model_state": model.state_dict(),
+                "optimizer_state": optimizer.state_dict(),
+                "val_loss": best_loss, "num_classes": train_ds.num_classes,
+                "imgsz": IMGSZ,
+            }, ckpt_path)
+            print(f"  ✅ Best 저장 (val_loss={best_loss:.4f}): {ckpt_path}")
+        else:
+            patience_counter += 1
+            if patience_counter >= PATIENCE:
+                print(f"\n  ⏹️  Early Stop! (patience {PATIENCE} 초과)")
+                break
+
+    with open(CKPT_DIR / f"{run_name}_history.json", "w") as f:
+        json.dump(history, f, indent=2)
+
+    print(f"\n✅ RetinaNet 학습 완료!")
+    print(f"   best 모델: {CKPT_DIR / f'{run_name}_best.pth'}")
+    print(f"   best val_loss: {best_loss:.4f}")
+
+if __name__ == "__main__":
+    train()

@@ -170,7 +170,7 @@ def train():
     # 공식 권장: SGD + StepLR
     optimizer = torch.optim.SGD(model.parameters(), lr=LR,
                                 momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
     best_loss = float('inf')
     patience_counter = 0
