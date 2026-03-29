@@ -174,7 +174,7 @@ def train():
     # 공식 권장: SGD + StepLR
     optimizer = torch.optim.SGD(model.parameters(), lr=LR,
                                 momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=EPOCHS)
 
 
     best_loss = float('inf')
@@ -218,8 +218,9 @@ def train():
                 val_loss += sum(loss_dict.values()).item()
         val_loss /= len(val_loader)
 
+        current_lr = optimizer.param_groups[0]['lr']
         print(f"  Epoch {epoch:3d} | Train Loss={avg_loss:.4f} | Val Loss={val_loss:.4f} | "
-              f"LR={scheduler.get_last_lr()[0]:.6f} | {elapsed:.1f}s")
+        f"LR={current_lr:.6f} | {elapsed:.1f}s")
 
         history.append({"epoch": epoch, "train_loss": avg_loss, "val_loss": val_loss})
 
