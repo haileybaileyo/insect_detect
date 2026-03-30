@@ -210,14 +210,19 @@ def train():
         # Val loss
         model.train()
         val_loss = 0.0
+        val_batches = 0
         with torch.no_grad():
             for images, targets in val_loader:
-                images  = [img.to(device) for img in images]
-                targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
-                loss_dict = model(images, targets)
-                val_loss += sum(loss_dict.values()).item()
-        val_loss /= len(val_loader)
-
+                try:
+                    images  = [img.to(device) for img in images]
+                    targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+                    loss_dict = model(images, targets)
+                    val_loss += sum(loss_dict.values()).item()
+                    val_batches += 1
+                except Exception as e:
+                    print(f"  ⚠️ Val 배치 오류 스킵: {e}")
+                    continue
+        val_loss = val_loss / val_batches if val_batches > 0 else float('inf')
         current_lr = optimizer.param_groups[0]['lr']
         print(f"  Epoch {epoch:3d} | Train Loss={avg_loss:.4f} | Val Loss={val_loss:.4f} | "
         f"LR={current_lr:.6f} | {elapsed:.1f}s")
