@@ -133,11 +133,7 @@ def predict_yolo(model_type: str, ckpt: str):
                 score  = float(box.conf[0].cpu())
                 cls_id = int(box.cls[0].cpu())
 
-                # 원본 해상도로 스케일
-                scale_x = orig_w / IMGSZ
-                scale_y = orig_h / IMGSZ
-                x1 *= scale_x; x2 *= scale_x
-                y1 *= scale_y; y2 *= scale_y
+       
 
                 predictions.append({
                     "image_id":    img_id,
