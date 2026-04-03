@@ -283,9 +283,9 @@ def compare_all():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model",   type=str, default=None,
-                        choices=["yolov8","rtdetr","faster_rcnn","retinanet"])
+                    choices=["yolov8","rtdetr","faster_rcnn","retinanet","rtdetr_sahi","rtdetr_sahi_nmm03"])
     parser.add_argument("--compare", action="store_true",
-                        help="4개 모델 비교표 생성")
+                        help="모델 비교표 생성")
     args = parser.parse_args()
 
     if args.compare:

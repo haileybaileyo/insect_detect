@@ -1,0 +1,30 @@
+path: /home/hailey/insect_detect_project/pest24_experiment/data
+train: sliced_320
+val: processed/val/images
+
+nc: 24
+names:
+  0: Agriotes fuscicollis Miwa
+  1: Anomala corpulenta
+  2: Armyworm
+  3: Athetis lepigone
+  4: Bollworm
+  5: Gryllotalpa orientalis
+  6: Land tiger
+  7: Little Gecko
+  8: Meadow borer
+  9: Melahotus
+  10: Nematode trench
+  11: Plutella xylostella
+  12: Rice Leaf Roller
+  13: Rice planthopper
+  14: Scotogramma trifolii Rottemberg
+  15: Spodoptera cabbage
+  16: Spodoptera exigua
+  17: Spodoptera litura
+  18: Stem borer
+  19: Striped rice bore
+  20: Yellow tiger
+  21: eight-character tiger
+  22: holotrichia oblita
+  23: holotrichia parallela

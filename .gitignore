@@ -27,3 +27,21 @@ pest24_experiment/results/predictions/
 
 EOF*.pt
 *.pth
+
+# 슬라이스 데이터
+pest24_experiment/data/sliced/
+pest24_experiment/data/sliced_320/
+
+# 모델 체크포인트
+pest24_experiment/checkpoints/
+runs/
+
+# 예측 결과
+pest24_experiment/results/predictions/
+
+# 로그
+pest24_experiment/logs/
+
+# 캐시
+*.cache
+*.pt
