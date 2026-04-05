@@ -1,6 +1,6 @@
 path: /home/hailey/insect_detect_project/pest24_experiment/data
 train: sliced_320
-val: processed/val/images
+val: sliced_320_val
 
 nc: 24
 names:

@@ -45,3 +45,33 @@ pest24_experiment/logs/
 # 캐시
 *.cache
 *.pt
+
+# 데이터
+pest24_experiment/data/processed/
+pest24_experiment/data/sliced/
+pest24_experiment/data/sliced_320/
+pest24_experiment/data/sliced_320_val/
+pest24_experiment/data/annotations/
+
+# 모델 체크포인트
+pest24_experiment/checkpoints/
+runs/
+
+# 예측 결과
+pest24_experiment/results/predictions/
+
+# 로그
+pest24_experiment/logs/
+
+# 캐시
+*.cache
+
+# 모델 가중치
+*.pt
+*.pth
+
+# 기타
+__pycache__/
+*.pyc
+.DS_Store
+nohup.out
