@@ -75,3 +75,35 @@ __pycache__/
 *.pyc
 .DS_Store
 nohup.out
+
+# 데이터셋 (용량 너무 큼)
+pest24_raw/
+pest24_experiment/data/processed/
+pest24_experiment/data/sliced/
+pest24_experiment/data/sliced_320/
+pest24_experiment/data/sliced_320_val/
+pest24_experiment/data/annotations/
+
+# 모델 체크포인트
+pest24_experiment/checkpoints/
+runs/
+*.pt
+*.pth
+
+# 예측 결과 (용량 큼)
+pest24_experiment/results/predictions/
+
+# 로그
+pest24_experiment/logs/
+
+# 캐시
+*.cache
+
+# 가상환경
+pest24_env/
+
+# 기타
+__pycache__/
+*.pyc
+.DS_Store
+nohup.out

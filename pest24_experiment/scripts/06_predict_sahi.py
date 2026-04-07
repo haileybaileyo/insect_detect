@@ -19,17 +19,17 @@ from sahi.predict import get_sliced_prediction
 # ─────────────────────────────────────────────
 # 설정
 # ─────────────────────────────────────────────
-CKPT     = "pest24_experiment/checkpoints/rtdetr/rtdetr_l_imgsz6409/weights/best.pt"
+CKPT     = "runs/detect/pest24_experiment/checkpoints/rtdetr_sliced/rtdetr_l_sliced_3206/weights/best.pt"
 ANNO     = "pest24_experiment/data/annotations/instances_test.json"
 IMG_DIR  = Path("pest24_experiment/data/processed/test/images")
 PRED_DIR = Path("pest24_experiment/results/predictions")
 PRED_DIR.mkdir(parents=True, exist_ok=True)
 
 CONF            = 0.25
-SLICE_SIZE      = 640
+SLICE_SIZE      = 320
 OVERLAP         = 0.2
-MATCH_THRESHOLD = 0.3   # NMM threshold (기본 0.5 → 0.3으로 낮춤)
-MODEL_TYPE  = "ultralytics"
+MATCH_THRESHOLD = 0.3
+MODEL_TYPE      = "ultralytics"
 
 # ─────────────────────────────────────────────
 # 모델 로드
@@ -101,7 +101,7 @@ for img_path in tqdm(img_list, desc="  SAHI 추론"):
 # ─────────────────────────────────────────────
 # 저장
 # ─────────────────────────────────────────────
-out_path = PRED_DIR / "rtdetr_sahi_nmm03_predictions.json"
+out_path = PRED_DIR / "rtdetr_sf_sahi_predictions.json"
 with open(out_path, 'w') as f:
     json.dump(predictions, f)
 
