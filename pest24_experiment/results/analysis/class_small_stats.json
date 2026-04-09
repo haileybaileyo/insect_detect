@@ -1,0 +1,170 @@
+[
+  {
+    "id": 14,
+    "name": "Rice planthopper",
+    "total": 117,
+    "small": 116,
+    "small_ratio": 0.9915
+  },
+  {
+    "id": 12,
+    "name": "Plutella xylostella",
+    "total": 89,
+    "small": 88,
+    "small_ratio": 0.9888
+  },
+  {
+    "id": 13,
+    "name": "Rice Leaf Roller",
+    "total": 129,
+    "small": 126,
+    "small_ratio": 0.9767
+  },
+  {
+    "id": 4,
+    "name": "Athetis lepigone",
+    "total": 3368,
+    "small": 3120,
+    "small_ratio": 0.9264
+  },
+  {
+    "id": 10,
+    "name": "Melahotus",
+    "total": 142,
+    "small": 130,
+    "small_ratio": 0.9155
+  },
+  {
+    "id": 1,
+    "name": "Agriotes fuscicollis Miwa",
+    "total": 603,
+    "small": 550,
+    "small_ratio": 0.9121
+  },
+  {
+    "id": 17,
+    "name": "Spodoptera exigua",
+    "total": 812,
+    "small": 717,
+    "small_ratio": 0.883
+  },
+  {
+    "id": 20,
+    "name": "Striped rice bore",
+    "total": 162,
+    "small": 130,
+    "small_ratio": 0.8025
+  },
+  {
+    "id": 9,
+    "name": "Meadow borer",
+    "total": 1716,
+    "small": 814,
+    "small_ratio": 0.4744
+  },
+  {
+    "id": 2,
+    "name": "Anomala corpulenta",
+    "total": 5694,
+    "small": 2605,
+    "small_ratio": 0.4575
+  },
+  {
+    "id": 5,
+    "name": "Bollworm",
+    "total": 2877,
+    "small": 1205,
+    "small_ratio": 0.4188
+  },
+  {
+    "id": 24,
+    "name": "holotrichia parallela",
+    "total": 1383,
+    "small": 538,
+    "small_ratio": 0.389
+  },
+  {
+    "id": 15,
+    "name": "Scotogramma trifolii Rottemberg",
+    "total": 473,
+    "small": 157,
+    "small_ratio": 0.3319
+  },
+  {
+    "id": 23,
+    "name": "holotrichia oblita",
+    "total": 7,
+    "small": 2,
+    "small_ratio": 0.2857
+  },
+  {
+    "id": 19,
+    "name": "Stem borer",
+    "total": 174,
+    "small": 41,
+    "small_ratio": 0.2356
+  },
+  {
+    "id": 3,
+    "name": "Armyworm",
+    "total": 884,
+    "small": 130,
+    "small_ratio": 0.1471
+  },
+  {
+    "id": 21,
+    "name": "Yellow tiger",
+    "total": 183,
+    "small": 23,
+    "small_ratio": 0.1257
+  },
+  {
+    "id": 11,
+    "name": "Nematode trench",
+    "total": 16,
+    "small": 2,
+    "small_ratio": 0.125
+  },
+  {
+    "id": 16,
+    "name": "Spodoptera cabbage",
+    "total": 252,
+    "small": 28,
+    "small_ratio": 0.1111
+  },
+  {
+    "id": 22,
+    "name": "eight-character tiger",
+    "total": 17,
+    "small": 1,
+    "small_ratio": 0.0588
+  },
+  {
+    "id": 18,
+    "name": "Spodoptera litura",
+    "total": 188,
+    "small": 4,
+    "small_ratio": 0.0213
+  },
+  {
+    "id": 8,
+    "name": "Little Gecko",
+    "total": 443,
+    "small": 8,
+    "small_ratio": 0.0181
+  },
+  {
+    "id": 6,
+    "name": "Gryllotalpa orientalis",
+    "total": 624,
+    "small": 3,
+    "small_ratio": 0.0048
+  },
+  {
+    "id": 7,
+    "name": "Land tiger",
+    "total": 33,
+    "small": 0,
+    "small_ratio": 0.0
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "id": 14,
+    "name": "Rice planthopper",
+    "small_ratio": 0.9915,
+    "RT-DETR": 0.3621,
+    "Faster R-CNN": 0.3534,
+    "YOLOv8": 0.0,
+    "RetinaNet": 0.1724
+  },
+  {
+    "id": 12,
+    "name": "Plutella xylostella",
+    "small_ratio": 0.9888,
+    "RT-DETR": 0.4773,
+    "Faster R-CNN": 0.4545,
+    "YOLOv8": 0.0,
+    "RetinaNet": 0.1818
+  },
+  {
+    "id": 13,
+    "name": "Rice Leaf Roller",
+    "small_ratio": 0.9767,
+    "RT-DETR": 0.9206,
+    "Faster R-CNN": 0.7698,
+    "YOLOv8": 0.6825,
+    "RetinaNet": 0.7222
+  },
+  {
+    "id": 4,
+    "name": "Athetis lepigone",
+    "small_ratio": 0.9264,
+    "RT-DETR": 0.9183,
+    "Faster R-CNN": 0.8471,
+    "YOLOv8": 0.6978,
+    "RetinaNet": 0.5279
+  },
+  {
+    "id": 10,
+    "name": "Melahotus",
+    "small_ratio": 0.9155,
+    "RT-DETR": 0.7923,
+    "Faster R-CNN": 0.8077,
+    "YOLOv8": 0.7385,
+    "RetinaNet": 0.6538
+  },
+  {
+    "id": 1,
+    "name": "Agriotes fuscicollis Miwa",
+    "small_ratio": 0.9121,
+    "RT-DETR": 0.9327,
+    "Faster R-CNN": 0.9255,
+    "YOLOv8": 0.8018,
+    "RetinaNet": 0.84
+  },
+  {
+    "id": 17,
+    "name": "Spodoptera exigua",
+    "small_ratio": 0.883,
+    "RT-DETR": 0.834,
+    "Faster R-CNN": 0.7727,
+    "YOLOv8": 0.6179,
+    "RetinaNet": 0.5872
+  },
+  {
+    "id": 20,
+    "name": "Striped rice bore",
+    "small_ratio": 0.8025,
+    "RT-DETR": 0.8769,
+    "Faster R-CNN": 0.8923,
+    "YOLOv8": 0.7923,
+    "RetinaNet": 0.7308
+  },
+  {
+    "id": 9,
+    "name": "Meadow borer",
+    "small_ratio": 0.4744,
+    "RT-DETR": 0.9251,
+    "Faster R-CNN": 0.8771,
+    "YOLOv8": 0.6634,
+    "RetinaNet": 0.7113
+  },
+  {
+    "id": 2,
+    "name": "Anomala corpulenta",
+    "small_ratio": 0.4575,
+    "RT-DETR": 0.9889,
+    "Faster R-CNN": 0.9175,
+    "YOLOv8": 0.9704,
+    "RetinaNet": 0.9067
+  },
+  {
+    "id": 5,
+    "name": "Bollworm",
+    "small_ratio": 0.4188,
+    "RT-DETR": 0.9502,
+    "Faster R-CNN": 0.8929,
+    "YOLOv8": 0.9071,
+    "RetinaNet": 0.8199
+  },
+  {
+    "id": 24,
+    "name": "holotrichia parallela",
+    "small_ratio": 0.389,
+    "RT-DETR": 0.9498,
+    "Faster R-CNN": 0.816,
+    "YOLOv8": 0.9052,
+    "RetinaNet": 0.7119
+  },
+  {
+    "id": 15,
+    "name": "Scotogramma trifolii Rottemberg",
+    "small_ratio": 0.3319,
+    "RT-DETR": 0.7389,
+    "Faster R-CNN": 0.6815,
+    "YOLOv8": 0.3885,
+    "RetinaNet": 0.5287
+  },
+  {
+    "id": 23,
+    "name": "holotrichia oblita",
+    "small_ratio": 0.2857,
+    "RT-DETR": 0.0,
+    "Faster R-CNN": 0.0,
+    "YOLOv8": 0.0,
+    "RetinaNet": 0.0
+  },
+  {
+    "id": 19,
+    "name": "Stem borer",
+    "small_ratio": 0.2356,
+    "RT-DETR": 0.8537,
+    "Faster R-CNN": 0.9024,
+    "YOLOv8": 0.5366,
+    "RetinaNet": 0.5122
+  },
+  {
+    "id": 3,
+    "name": "Armyworm",
+    "small_ratio": 0.1471,
+    "RT-DETR": 0.6462,
+    "Faster R-CNN": 0.6,
+    "YOLOv8": 0.4692,
+    "RetinaNet": 0.3923
+  },
+  {
+    "id": 21,
+    "name": "Yellow tiger",
+    "small_ratio": 0.1257,
+    "RT-DETR": 0.5217,
+    "Faster R-CNN": 0.4783,
+    "YOLOv8": 0.3043,
+    "RetinaNet": 0.4348
+  },
+  {
+    "id": 11,
+    "name": "Nematode trench",
+    "small_ratio": 0.125,
+    "RT-DETR": 1.0,
+    "Faster R-CNN": 0.5,
+    "YOLOv8": 0.5,
+    "RetinaNet": 0.0
+  },
+  {
+    "id": 16,
+    "name": "Spodoptera cabbage",
+    "small_ratio": 0.1111,
+    "RT-DETR": 0.3929,
+    "Faster R-CNN": 0.3929,
+    "YOLOv8": 0.2857,
+    "RetinaNet": 0.25
+  },
+  {
+    "id": 22,
+    "name": "eight-character tiger",
+    "small_ratio": 0.0588,
+    "RT-DETR": 0.0,
+    "Faster R-CNN": 0.0,
+    "YOLOv8": 0.0,
+    "RetinaNet": 0.0
+  },
+  {
+    "id": 18,
+    "name": "Spodoptera litura",
+    "small_ratio": 0.0213,
+    "RT-DETR": 0.25,
+    "Faster R-CNN": 0.25,
+    "YOLOv8": 0.25,
+    "RetinaNet": 0.25
+  },
+  {
+    "id": 8,
+    "name": "Little Gecko",
+    "small_ratio": 0.0181,
+    "RT-DETR": 0.625,
+    "Faster R-CNN": 0.375,
+    "YOLOv8": 0.375,
+    "RetinaNet": 0.25
+  },
+  {
+    "id": 6,
+    "name": "Gryllotalpa orientalis",
+    "small_ratio": 0.0048,
+    "RT-DETR": 0.0,
+    "Faster R-CNN": 0.0,
+    "YOLOv8": 0.0,
+    "RetinaNet": 0.3333
+  },
+  {
+    "id": 7,
+    "name": "Land tiger",
+    "small_ratio": 0.0,
+    "RT-DETR": null,
+    "Faster R-CNN": null,
+    "YOLOv8": null,
+    "RetinaNet": null
+  }
+]
