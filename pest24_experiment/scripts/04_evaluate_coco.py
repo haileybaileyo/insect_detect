@@ -283,7 +283,7 @@ def compare_all():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model",   type=str, default=None,
-                    choices=["yolov8","rtdetr","faster_rcnn","retinanet","rtdetr_sahi","rtdetr_sahi_nmm03","rtdetr_sf_sahi","wbf_ensemble","wbf_ensemble_v2","wbf_ensemble_v3","rtdetr_tta"])
+                    choices=["yolov8","rtdetr","faster_rcnn","retinanet","rtdetr_sahi","rtdetr_sahi_nmm03","rtdetr_sf_sahi","wbf_ensemble","wbf_ensemble_v2","wbf_ensemble_v3","rtdetr_tta","rtdetr_896"])
     parser.add_argument("--compare", action="store_true",
                         help="모델 비교표 생성")
     args = parser.parse_args()

@@ -92,7 +92,7 @@ def predict_yolo(model_type: str, ckpt: str):
     print(f" 체크포인트: {ckpt}")
     print("=" * 60)
 
-    if model_type == "rtdetr":
+    if model_type in ["rtdetr", "rtdetr_896"]:
         from ultralytics import RTDETR
         model = RTDETR(ckpt)
     else:
@@ -258,11 +258,11 @@ def predict_torchvision(model_name: str, ckpt: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True,
-                        choices=["yolov8","rtdetr","faster_rcnn","retinanet"])
+                        choices=["yolov8","rtdetr","faster_rcnn","retinanet","rtdetr_896"])
     parser.add_argument("--ckpt",  required=True, help="체크포인트 경로")
     args = parser.parse_args()
 
-    if args.model in ["yolov8", "rtdetr"]:
+    if args.model in ["yolov8", "rtdetr", "rtdetr_896"]:
         predict_yolo(args.model, args.ckpt)
     else:
         predict_torchvision(args.model, args.ckpt)

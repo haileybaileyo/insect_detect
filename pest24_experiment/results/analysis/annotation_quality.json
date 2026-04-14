@@ -1,0 +1,242 @@
+{
+  "total_annotations": 152674,
+  "negative_bbox": 0,
+  "out_of_bound": 0,
+  "zero_area": 0,
+  "area_stats": {
+    "min": 6.0,
+    "max": 9610.0,
+    "mean": 1272.1023815449912,
+    "median": 986.0,
+    "std": 991.8404193630033
+  },
+  "tiny_bbox_count": {
+    "4": 0,
+    "9": 1,
+    "16": 2,
+    "25": 7,
+    "36": 57,
+    "64": 371,
+    "100": 926,
+    "256": 3857
+  },
+  "duplicate_count": 1,
+  "class_stats": [
+    {
+      "name": "Rice planthopper",
+      "count": 1289,
+      "mean_area": 158.3599689681924,
+      "std_area": 196.62542702477606,
+      "cv": 1.2416359279804452,
+      "min": 12.0,
+      "max": 2576.0
+    },
+    {
+      "name": "Plutella xylostella",
+      "count": 772,
+      "mean_area": 208.11269430051814,
+      "std_area": 134.2412046674365,
+      "cv": 0.6450409241907656,
+      "min": 27.0,
+      "max": 1872.0
+    },
+    {
+      "name": "Agriotes fuscicollis Miwa",
+      "count": 5220,
+      "mean_area": 546.6360153256705,
+      "std_area": 311.6231939774949,
+      "cv": 0.5700743918086671,
+      "min": 54.0,
+      "max": 4836.0
+    },
+    {
+      "name": "Rice Leaf Roller",
+      "count": 991,
+      "mean_area": 582.7941473259334,
+      "std_area": 192.92073945394677,
+      "cv": 0.3310272423618797,
+      "min": 6.0,
+      "max": 1886.0
+    },
+    {
+      "name": "Athetis lepigone",
+      "count": 23814,
+      "mean_area": 627.163139329806,
+      "std_area": 280.36739304355655,
+      "cv": 0.4470406110651855,
+      "min": 126.0,
+      "max": 4514.0
+    },
+    {
+      "name": "Spodoptera exigua",
+      "count": 5736,
+      "mean_area": 662.6509762900977,
+      "std_area": 303.25032043435306,
+      "cv": 0.4576320435414179,
+      "min": 88.0,
+      "max": 3780.0
+    },
+    {
+      "name": "Melahotus",
+      "count": 592,
+      "mean_area": 766.206081081081,
+      "std_area": 299.1299908894241,
+      "cv": 0.3904040939839131,
+      "min": 48.0,
+      "max": 1840.0
+    },
+    {
+      "name": "Striped rice bore",
+      "count": 1028,
+      "mean_area": 864.6118677042801,
+      "std_area": 319.9448154860989,
+      "cv": 0.37004444125387415,
+      "min": 120.0,
+      "max": 6264.0
+    },
+    {
+      "name": "Meadow borer",
+      "count": 13074,
+      "mean_area": 1083.0715924736116,
+      "std_area": 437.9225386282014,
+      "cv": 0.4043338793772962,
+      "min": 77.0,
+      "max": 5440.0
+    },
+    {
+      "name": "Anomala corpulenta",
+      "count": 42746,
+      "mean_area": 1181.5894352687972,
+      "std_area": 612.6459016887017,
+      "cv": 0.5184930428472663,
+      "min": 162.0,
+      "max": 4958.0
+    },
+    {
+      "name": "holotrichia parallela",
+      "count": 8967,
+      "mean_area": 1205.001449760232,
+      "std_area": 514.0537781471741,
+      "cv": 0.42660013251391454,
+      "min": 192.0,
+      "max": 3780.0
+    },
+    {
+      "name": "Stem borer",
+      "count": 1465,
+      "mean_area": 1330.3931740614335,
+      "std_area": 409.9680579680436,
+      "cv": 0.30815556330350846,
+      "min": 266.0,
+      "max": 4611.0
+    },
+    {
+      "name": "Bollworm",
+      "count": 22061,
+      "mean_area": 1345.8297447985133,
+      "std_area": 711.4613489854511,
+      "cv": 0.5286414212014353,
+      "min": 144.0,
+      "max": 9610.0
+    },
+    {
+      "name": "Scotogramma trifolii Rottemberg",
+      "count": 3725,
+      "mean_area": 1351.3178523489933,
+      "std_area": 561.4873698371699,
+      "cv": 0.4155109538892996,
+      "min": 77.0,
+      "max": 4897.0
+    },
+    {
+      "name": "Nematode trench",
+      "count": 138,
+      "mean_area": 1524.2536231884058,
+      "std_area": 819.6968869038823,
+      "cv": 0.5377693544131162,
+      "min": 153.0,
+      "max": 5082.0
+    },
+    {
+      "name": "holotrichia oblita",
+      "count": 87,
+      "mean_area": 1569.942528735632,
+      "std_area": 512.0951859329225,
+      "cv": 0.32618721804125095,
+      "min": 600.0,
+      "max": 3480.0
+    },
+    {
+      "name": "Armyworm",
+      "count": 7120,
+      "mean_area": 1907.9761235955057,
+      "std_area": 824.5479655324033,
+      "cv": 0.43215842972844715,
+      "min": 342.0,
+      "max": 5859.0
+    },
+    {
+      "name": "Yellow tiger",
+      "count": 1325,
+      "mean_area": 1925.4098113207547,
+      "std_area": 938.5348615764382,
+      "cv": 0.4874468053804299,
+      "min": 180.0,
+      "max": 5508.0
+    },
+    {
+      "name": "Spodoptera cabbage",
+      "count": 1784,
+      "mean_area": 2047.7146860986547,
+      "std_area": 923.157826805574,
+      "cv": 0.4508234633821922,
+      "min": 570.0,
+      "max": 6500.0
+    },
+    {
+      "name": "eight-character tiger",
+      "count": 137,
+      "mean_area": 2132.6423357664235,
+      "std_area": 892.8571765796178,
+      "cv": 0.4186624084149324,
+      "min": 928.0,
+      "max": 5609.0
+    },
+    {
+      "name": "Spodoptera litura",
+      "count": 1578,
+      "mean_area": 2193.6970849176173,
+      "std_area": 757.3990519921115,
+      "cv": 0.34526145710794665,
+      "min": 63.0,
+      "max": 8099.0
+    },
+    {
+      "name": "Little Gecko",
+      "count": 3375,
+      "mean_area": 2705.5425185185186,
+      "std_area": 1077.990438994032,
+      "cv": 0.39843781112865684,
+      "min": 336.0,
+      "max": 8051.0
+    },
+    {
+      "name": "Land tiger",
+      "count": 397,
+      "mean_area": 3016.0579345088163,
+      "std_area": 1513.8329716864419,
+      "cv": 0.501924367687247,
+      "min": 560.0,
+      "max": 8632.0
+    },
+    {
+      "name": "Gryllotalpa orientalis",
+      "count": 5253,
+      "mean_area": 4564.541024176661,
+      "std_area": 1373.7083760877542,
+      "cv": 0.3009521370958737,
+      "min": 108.0,
+      "max": 9595.0
+    }
+  ]
+}
